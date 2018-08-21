@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Sportshold</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -45,12 +47,18 @@
     <h1 class="visually-hidden">SportsHold store</h2>
     <section class="banner">
       <h2 class="visually-hidden">Banner</h2>
+      <div class="bannerwrap">
+      <div class="banner-left">
       <img src="img/Layer 2.jpg" width="829" height="732" alt="Nike Air Max">
-      <p>from $80.00</p>
+      </div>
+      <div class="banner-right">
+      <p class="banner-price">from $80.00</p>
       <h3>Nike Air Max</h3>
       <b>50 Variants</b>
-      <p>Since this is our favorite sneaker, we’re bringing you 50 variants to suit everyone’s needs.</p>
-      <a class="button" href="#">browse variants</a>     
+      <p class="banner-info">Since this is our favorite sneaker, we’re bringing you 50 variants to suit everyone’s needs.</p>
+      <a class="button banner-button" href="#">browse variants</a> 
+      </div>
+    </div>
     </section>
     <section class="advertising">
       <h2 class="visually-hidden">Advertising</h2>
@@ -60,25 +68,25 @@
           <p>Discover the new
             <span>nike kyrie 3</span>
           </p>
-          <a class="button" href="#">view collection</a>
+          <a class="button collection-button" href="#">view collection</a>
         </div>
       </div>
       <div class="advertising-right">
         <div class="advertising-primary">
           <h3>Check out the
-            <span>new arrivals</span>
+            <span class="newarrivals">new arrivals</span>
           </h3>
-          <a class="button" href="#">view collection</a>
+          <a class="button discover-button" href="#">discover</a>
         </div>
         <div class="advertising-container">
           <div class="advertising-small">
             <h3>Best for
-              <span>athletes</span>
+              <span class="athletes">athletes</span>
             </h3>
           </div>
           <div class="advertising-small">
-            <h3>Feel
-              <span>premium</span>
+            <h3 class="advertising-title--premium">Feel
+              <span class="premium">premium</span>
             </h3>
           </div>
         </div>
@@ -103,68 +111,68 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <div>
-            <p>$45.00</p>
+            <p class="current-price convblue-price">$45.00</p>
             <p>$60.00</p>
           </div>
           <img src="img/convblue.jpg" width="200" height="81" alt="Men Converse Breakpoint">
           <b>men</b>
           <p>Converse Breakpoint Suede Blue</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
-          <p>$55.00</p>
+          <p class="current-price">$55.00</p>
           <img src="img/convct.jpg" width="199" height="84" alt="Converse CT All Star ll">
           <b>men/women</b>
           <p>Converse CT all Star ll</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
           <div>
-            <p>$60.00</p>
+            <p class="current-price adidaspure-price">$60.00</p>
             <p>$80.00</p>
           </div>
           <img src="img/adidaspure.jpg" width="200" height="200" alt="Adidas Pure Boost Chill">
           <b>women</b>
           <p>Adidas Pure Boost Chill</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
-          <p>$50.00</p>
+          <p class="current-price">$50.00</p>
           <img src="img/pumadup.jpg" width="200" height="200" alt="Puma Duplex W Casual">
           <b>men</b>
           <p>Puma Duplex W Casual</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
-          <p>$90.00</p>
+          <p class="current-price">$90.00</p>
           <img src="img/adidasalpha.jpg" width="200" height="200" alt="Adidas Alphabounce 1M">
           <b>men</b>
           <p>Adidas Alphabounce 1M</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
           <div>
-            <p>$50.00</p>
+            <p class="current-price asicsgel-price">$50.00</p>
             <p>$100.00</p>
           </div>
           <img src="img/asicsgel.jpg" width="200" height="200" alt="Asics GEL-Epirus">
           <b>men</b>
           <p>Asics GEL-Epirus</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
-          <p>$40.00</p>
+          <p class="current-price">$40.00</p>
           <img src="img/adidasmesh.jpg" width="200" height="200" alt="Adidas Originals Courtvantage Mesh">
           <b>men</b>
           <p>Adidas Originals Courtvantage Mesh</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
         <li class="catalog-item">
-          <p>$80.00</p>
+          <p class="current-price">$80.00</p>
           <img src="img/adidasclima.jpg" width="200" height="200" alt="Adidas Originals Climacool 1">
           <b>men</b>
           <p>Adidas Originals Climacool 1</p>
-          <p>#16378271</p>
+          <p class="item-number">#16378271</p>
         </li>
       </ul>
     </section>
@@ -173,42 +181,42 @@
       <ul class="partners-list">
         <li class="partners-item">
           <a href="#">
-            <img src="http://placehold.it/100x68" width="100" height="68" alt="adidas">
+            <img src="img/adidaslogo.png" width="100" height="68" alt="adidas">
           </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="http://placehold.it/100x52" width="100" height="52" alt="nike">
+            <img src="img/nikelogo.png" width="100" height="52" alt="nike">
           </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="http://placehold.it/120x61" width="120" height="61" alt="puma">
+            <img src="img/pumalogo.png" width="120" height="61" alt="puma">
           </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="http://placehold.it/99x44" width="99" height="44" alt="asics">
+            <img src="img/asicslogo.png" width="99" height="44" alt="asics">
           </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="http://placehold.it/120x56" width="120" height="56" alt="new balance">
+            <img src="img/newbalancelogo.png" width="120" height="56" alt="new balance">
           </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="http://placehold.it/100x33" width="100" height="33" alt="fila">
+            <img src="img/filalogo.png" width="100" height="33" alt="fila">
           </a>
         </li>
       </ul>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Reviews</h2>
-      <ul>
-        <li>
-          <img src="http://placehold.it/64x65" width="64" height="65" alt="avatar">
-          <p>Christopher Atkins</p>
+      <ul class="avatar-list">
+        <li class="avatar-item">
+          <img src="img/avatar.png" width="64" height="65" alt="avatar">
+          <p class="chris-review">Christopher Atkins</p>
           <ul class="author-raiting">
             <li class="author-raiting-on"></li>
             <li class="author-raiting-on"></li>
@@ -217,9 +225,9 @@
             <li class="author-raiting-on"></li>
           </ul>
         </li>
-        <li>
-          <img src="http://placehold.it/64x65" width="64" height="65" alt="avatar">
-          <p>Andrew Ferraccioli</p>
+        <li class="avatar-item">
+          <img src="img/avatar.png" width="64" height="65" alt="avatar">
+          <p class="andrew-review">Andrew Ferraccioli</p>
           <ul class="author-raiting">
             <li class="author-raiting-on"></li>
             <li class="author-raiting-on"></li>
@@ -228,9 +236,9 @@
             <li class="author-raiting-off"></li>
           </ul>
         </li>
-        <li>
-          <img src="http://placehold.it/64x65" width="64" height="65" alt="avatar">
-          <p>Sandra Jensen</p>
+        <li class="avatar-item">
+          <img src="img/avatar.png" width="64" height="65" alt="avatar">
+          <p class="sandra-review">Sandra Jensen</p>
           <ul class="author-raiting">
             <li class="author-raiting-on"></li>
             <li class="author-raiting-on"></li>
@@ -240,30 +248,30 @@
           </ul>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="review-list">
+        <li class="review-item">
           <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
         </li>
       </ul>
     </section>
     <section class="news">
       <h2 class="visually-hidden">Latest News</h2>
-      <b>latest news</b>
+      <b class="news-title">latest news</b>
       <ul class="news-list">
         <li class="news-item">
-          <img src="http://placehold.it/350x350" width="350" height="350" alt="news">
+          <img src="img/news1.jpg" width="350" height="350" alt="news">
           <b>DEC 27,2017</b>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
           <p>24 Comments</p>
         </li>
         <li class="news-item">
-          <img src="http://placehold.it/350x350" width="350" height="350" alt="news">
+          <img src="img/news2.jpg" width="350" height="350" alt="news">
           <b>DEC 27,2017</b>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
           <p>24 Comments</p>
         </li>
         <li class="news-item">
-          <img src="http://placehold.it/350x350" width="350" height="350" alt="news">
+          <img src="img/news3.jpg" width="350" height="350" alt="news">
           <b>DEC 27,2017</b>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
           <p>24 Comments</p>
@@ -274,32 +282,32 @@
       <h2 class="visually-hidden">Contacts</h2>
       <p>looking for help?</p>
       <p>Have any questions or need help with order? Let us know!</p>
-      <a class="contacts-help" href="#">make an inquiry</a>
+      <a class="button contacts-help" href="#">make an inquiry</a>
     </section>
   </main>
   <footer class="main-footer">
     <section class="footer-delivery">
       <h2 class="visually-hidden">Delivery information</h2>
       <ul class="delivery-list">
-        <li class="delivery-item">Free Shipping in Europe</li>
-        <li class="delivery-item">Money Back Guarantee</li>
-        <li class="delivery-item">24/7 Customer Support</li>
-        <li class="delivery-item">Lowest Prices Guaranteed</li>
-        <li class="delivery-item">Exclusive Items for Sportshold</li>
-        <li class="delivery-item">5-Day Delivery in Europe</li>
+        <li class="delivery-item">Free Shipping <br>in Europe</li>
+        <li class="delivery-item">Money Back <br>Guarantee</li>
+        <li class="delivery-item">24/7 Customer <br>Support</li>
+        <li class="delivery-item">Lowest Prices <br>Guaranteed</li>
+        <li class="delivery-item">Exclusive Items for <br>Sportshold</li>
+        <li class="delivery-item">5-Day Delivery <br>in Europe</li>
       </ul>
     </section>
       <address>
-        <ul>
-          <li>
+        <ul class="address-list">
+          <li class="address-item">
             <b>call us</b>
             <p>tel:0 (1234) 567 890</p>
           </li>
-          <li>
+          <li class="address-item">
             <b>email us</b>
             <p>mailto:hello@sportshold.com</p>
           </li>
-          <li>
+          <li class="address-item">
             <b>address</b>
             <p>40 Baria Street 133/2, NY.US</p>
           </li>
@@ -307,7 +315,7 @@
       </address>
       <nav class="footer-navigation">
         <h2>navigation</h2>
-        <ul>
+        <ul class="navigation-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Latest News</a></li>
@@ -315,7 +323,7 @@
           <li><a href="#">Brands</a></li>
         </ul>
         <h2>categories</h2>
-        <ul>
+        <ul class="categories-list">
           <li><a href="#">Men</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Children</a></li>
@@ -323,14 +331,14 @@
           <li><a href="#">Accessories</a></li>
         </ul>
         <h2>sales</h2>
-        <ul>
+        <ul class="sales-list">
           <li><a href="#">New Arrivals</a></li>
           <li><a href="#">Most Popular</a></li>
           <li><a href="#">Top Picks</a></li>
           <li><a href="#">Outlet</a></li>
         </ul>
         <h2>support</h2>
-        <ul>
+        <ul class="support-list">
           <li><a href="#">Shipping & Delivery</a></li>
           <li><a href="#">Return Policy</a></li>
           <li><a href="#">Terms of Service</a></li>
@@ -339,7 +347,7 @@
         </ul>
       </nav>
       <img src="img/logo.svg" width="110" height="16" alt="Sportshold store logo">
-      <p>2017 Sportshold. All rights reserved.</p>
+      <p class="copyright">2017 Sportshold. All rights reserved.</p>
       <div class="footer-social">
         <ul class="social-list">
           <li class="social-item">
