@@ -88,9 +88,32 @@ body {
     list-style: none;
 }
 
-
 .site-navigation li {
     margin-right: 38px;
+}
+
+.site-navigation a:hover {
+    color: #ff7373;
+}
+
+.site-navigation a:active {
+  color: #ffc0cb;
+}
+
+.user-navigation a:hover {
+    background-color: #ff7373;
+}
+
+.user-navigation a:active {
+    color: #ffc0cb;
+}
+
+.store-navigation a:hover {
+    color: #ff7373;
+}
+
+.store-navigation a:active {
+    color: #ffc0cb
 }
 
 .user-navigation {
@@ -134,6 +157,10 @@ body {
     list-style: none;
 }
 
+.store-navigation a {
+    display: block;
+}
+
 .store-navigation li {
     margin-left: 35px;
 }
@@ -148,6 +175,8 @@ img {
 }
 
 .banner {
+    background-image: url("../img/nikeairbanner.png");
+    background-repeat: no-repeat;
     background-color: #f0efee;
 }
 
@@ -181,18 +210,9 @@ img {
 }
 
 .banner-button {
-    box-sizing: border-box;
-    display: inline-block;
     padding: 10px;
     min-width: 255px;
-    font-family: inherit;
-    font-weight: 700;
-    font-style: bold;
-    vertical-align: middle;
-    text-align: center;
-    text-transform: uppercase;
     color: #ffffff;
-    border: none;
     background-color: #ff7373;
 }
 
@@ -223,16 +243,35 @@ img {
     font-size: 30px;
     color: #ffffff;
 }
+
 .advertising-primary h3 {
     font-weight: 400;
 }
 
-.advertising-primary .newarrivals {
+.advertising-primary-newarrivals .newarrivals {
     color: #ffffff;
+}
+
+.advertising-primary-newarrivals {
+    background-image: url("../img/new-arrivals.png");
+    background-repeat: no-repeat;
+    background-color: #ff7373;
 }
 
 .advertising-small h3 {
     font-weight: 400;
+}
+
+.advertising-small {
+    background-image: url("../img/best-for-athletes.png");
+    background-repeat: no-repeat;
+    background-color: #2d2f2e;
+}
+
+.advertising-small-premium {
+    background-image: url("..img/feel-premium.png");
+    background-repeat: no-repeat;
+    background-color: #cecece;
 }
 
 .advertising-small .athletes {
@@ -255,11 +294,33 @@ img {
     background-color: #4bd8cd;
 }
 
+.collection-button:hover,
+.collection-button:focus {
+  background-color: #3cada4;
+}
+
+.collection-button:active {
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #308a83;
+}
+
 .discover-button {
     min-width: 145px;
     padding: 15px;
     color: #ffffff;
     background-color: #623232;
+}
+
+.discover-button:hover,
+.discover-button:focus {
+  background-color: #4e2828;
+}
+
+.discover-button:active {
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #3e2020;
 }
 
 .sort-list {
@@ -312,20 +373,33 @@ img {
     color: #8a8784;
 }
 
+.price-wrapper {
+    position: absolute;
+}
+
 .catalog-item .convblue-price {
+    margin-top: -50px;
     color: #ff7373;
 }
 
 .catalog-item .adidaspure-price {
+    margin-top: -30px;
     color: #ff7373;
 }
 
+
 .catalog-item .asicsgel-price {
+    margin-top: -20px;
     color: #ff7373;
 }
 
 .catalog-item b {
     font-weight: 700;
+    text-transform: uppercase;
+}
+
+.category-men {
+    display: block;
 }
 
 .item-number {
@@ -364,6 +438,7 @@ img {
 
 .review-item p {
     color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .news-list {
@@ -400,6 +475,18 @@ img {
     color: #ffffff;
     background-color: #623232;
 }
+
+.contacts-help:hover,
+.contacts-help:focus {
+  background-color: #714646;
+}
+
+.contacts-help:active {
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #653f3f;
+}
+
 
 .contacts { 
     background-color: #ff7373;
@@ -449,6 +536,36 @@ img {
     color: #ffffff;
 }
 
+.address-item a {
+    color: #ffffff;
+}
+
+.address-item a:hover {
+    color: #ff7373;
+}
+
+.address-item a:active {
+  color: #ffc0cb;
+}
+
+.address-item p:hover {
+    color: #ff7373;
+}
+
+.address-item p:active {
+  color: #ffc0cb;
+}
+
+.footer-navigation a:hover {
+    color: #ff7373;
+}
+
+.footer-navigation a:active {
+    color: #ffc0cb;
+}
+.address-item {
+    font-style: normal;
+}
 .footer-navigation h2 {
     font-size: 16px;
     font-weight: 700;
