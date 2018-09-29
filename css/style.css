@@ -55,6 +55,7 @@ body {
   clip-path: inset(100%);
 
 }
+
 .container {
     width: 1110px;
     margin: 0 auto;
@@ -62,8 +63,7 @@ body {
 }
 
 .main-header {
-    margin-bottom: 135px;
-    padding-top: 18px;
+    margin-bottom: 50px;
 }
 
 .main-navigation {
@@ -75,6 +75,12 @@ body {
 
 .main-navigation a {
     color: #ffffff;
+}
+
+.main-header-logo {
+   width: 182px;
+   height: 24px;
+   margin-top: 29px;
 }
 
 .site-navigation {
@@ -90,6 +96,7 @@ body {
 
 .site-navigation li {
     margin-right: 38px;
+    
 }
 
 .site-navigation a:hover {
@@ -126,12 +133,28 @@ body {
     list-style: none;
 }
 
+
+.site-navigation a,
+.store-navigation,
 .user-navigation a {
     display: block;
+    vertical-align: middle;
 }
 
 .user-navigation li {
-    margin-right: 38px;
+    
+}
+
+.user-navigation .register-link {
+    padding: 20px;
+}
+
+.user-navigation .login-link {
+    padding: 20px;
+}
+
+.user-navigation .cart {
+    padding: 20px;
 }
 
 .secondary-navigation {
@@ -186,15 +209,33 @@ img {
 }
 
 .banner h3 {
+    margin: 0;
+    margin-bottom: 26px;
     font-size: 70px;
     font-weight: 800;
     color: #623232;
 }
 
 .banner b {
+    margin-bottom: 35px;
     font-size: 50px;
     font-weight: 800;
     color: #ff7373;
+}
+
+p.banner-price {
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+p.banner-info {
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.banner-text--wrapper {
+    width: 50%;
+    margin-left: auto;
 }
 
 .button {
@@ -227,6 +268,7 @@ img {
   background-color: #d7373b;
 }
 
+
 .advertising p {
     font-size: 30px;
     color: #ffffff;
@@ -244,7 +286,13 @@ img {
     color: #ffffff;
 }
 
+.advertising-primary {
+    position: relative;
+}
+
 .advertising-primary h3 {
+    position: absolute;
+    top: 0;
     font-weight: 400;
 }
 
@@ -253,9 +301,21 @@ img {
 }
 
 .advertising-primary-newarrivals {
+    width: 540px;
+    height: 255px;
     background-image: url("../img/new-arrivals.png");
     background-repeat: no-repeat;
     background-color: #ff7373;
+}
+
+.advertising {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertising-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .advertising-small h3 {
@@ -263,13 +323,17 @@ img {
 }
 
 .advertising-small {
+    width: 255px;
+    height: 65px;
     background-image: url("../img/best-for-athletes.png");
     background-repeat: no-repeat;
     background-color: #2d2f2e;
 }
 
 .advertising-small-premium {
-    background-image: url("..img/feel-premium.png");
+    width: 255px;
+    height: 255px;
+    background-image: url("../img/feel-premium.png");
     background-repeat: no-repeat;
     background-color: #cecece;
 }
@@ -288,6 +352,9 @@ img {
 }
 
 .collection-button {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
     min-width: 211px;
     padding: 15px;
     color: #000000;
@@ -368,28 +435,44 @@ img {
 }
 
 .current-price {
+    margin: 0;
     font-size: 24px;
     line-height: 26px;
     color: #8a8784;
 }
 
+.old-price {
+    display: inline-block;
+    margin-top: 10px;
+}
+
 .price-wrapper {
-    position: absolute;
+  position: absolute;
+  outline: 1px solid red;
+  top: 10px;
+  width: calc(100% - 20px);
+}
+
+.catalog-item {
+    position: relative;
+    outline: 1px solid black;
+    padding: 10px;
+}
+
+.catalog-item img {
+    display: block;
 }
 
 .catalog-item .convblue-price {
-    margin-top: -50px;
     color: #ff7373;
 }
 
 .catalog-item .adidaspure-price {
-    margin-top: -30px;
     color: #ff7373;
 }
 
 
 .catalog-item .asicsgel-price {
-    margin-top: -20px;
     color: #ff7373;
 }
 

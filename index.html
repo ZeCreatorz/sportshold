@@ -8,8 +8,11 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
+    <nav class="main-navigation">
+        <div class="container" style="
+          display: flex;
+          justify-content: space-between;
+        ">
         <ul class="site-navigation">
           <li><a href="#">Support</a></li>
           <li><a href="#">Delivery</a></li>
@@ -18,16 +21,21 @@
         </ul>
         <ul class="user-navigation">
           <li>
-            <a href="#">
+            <a class="cart" href="#">
               <span class="cart-price">465.00</span>
               <span class="cart-quantity">4 items</span>
             </a>
           </li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
+          <li><a class="login-link" href="#">Login</a></li>
+          <li><a class="register-link" href="#">Register</a></li>
         </ul>
+      </div>
       </nav>
       <nav class="secondary-navigation">
+        <div class="container" style="
+          display: flex;
+          justify-content: space-between;
+        ">
         <a class="main-header-logo">
           <img src="img/logosport.svg" width="182" height="24" alt="Sportshold store logo">
         </a>
@@ -40,27 +48,29 @@
           <li><a href="#">Our Brands</a></li>
           <li><a href="#">Sales</a></li>
         </ul>
+        </div>
       </nav>
-    </div>
+      <h1 class="visually-hidden">SportsHold store</h1>
+      <section class="banner">
+        <h2 class="visually-hidden">Banner</h2>
+        <div class="banner-text--wrapper">
+          <p class="banner-price">from $80.00</p>
+          <h3>Nike Air Max</h3>
+          <b>50 Variants</b>
+          <p class="banner-info">Since this is our favorite sneaker, we’re bringing you 50 variants to suit everyone’s needs.</p>
+          <a class="button banner-button" href="#">browse variants</a> 
+        </div>
+      </section>
   </header>
 	<main class="container">
-    <h1 class="visually-hidden">SportsHold store</h2>
-    <section class="banner">
-      <h2 class="visually-hidden">Banner</h2>
-      <p class="banner-price">from $80.00</p>
-      <h3>Nike Air Max</h3>
-      <b>50 Variants</b>
-      <p class="banner-info">Since this is our favorite sneaker, we’re bringing you 50 variants to suit everyone’s needs.</p>
-      <a class="button banner-button" href="#">browse variants</a> 
-    </section>
     <section class="advertising">
       <h2 class="visually-hidden">Advertising</h2>
       <div class="advertising-left">
-        <div class="advertising-primary advertising-primary--first">
+        <div class="advertising-primary advertising-primary--first" stlye="position: relative;">
           <img src="img/nike-kyrie.jpg" width="540" height="540" alt="Nike Kyrie3">
-          <p>Discover the new
+          <h3>Discover the new
             <span>nike kyrie 3</span>
-          </p>
+          </h3>
           <a class="button collection-button" href="#">view collection</a>
         </div>
       </div>
@@ -293,7 +303,7 @@
         <ul class="address-list">
           <li class="address-item">
             <b>call us</b>
-            <a href="tel:0 (1234) 567 890">0 (1234) 567 890</a>
+            <a href="tel:0(1234)567890">0 (1234) 567 890</a>
           </li>
           <li class="address-item">
             <b>email us</b>
