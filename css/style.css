@@ -198,6 +198,7 @@ img {
 }
 
 .banner {
+    margin-bottom: 50px;
     background-image: url("../img/nikeairbanner.png");
     background-repeat: no-repeat;
     background-color: #f0efee;
@@ -210,14 +211,14 @@ img {
 
 .banner h3 {
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     font-size: 70px;
     font-weight: 800;
     color: #623232;
 }
 
 .banner b {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
     font-size: 50px;
     font-weight: 800;
     color: #ff7373;
@@ -229,11 +230,11 @@ p.banner-price {
 }
 
 p.banner-info {
-    margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
 }
 
 .banner-text--wrapper {
+    padding: 136px 0 132px;
     width: 50%;
     margin-left: auto;
 }
@@ -283,6 +284,7 @@ p.banner-info {
 
 .advertising h3 {
     font-size: 30px;
+    font-weight: 400;
     color: #ffffff;
 }
 
@@ -292,7 +294,9 @@ p.banner-info {
 
 .advertising-primary h3 {
     position: absolute;
+    text-align: center;
     top: 0;
+    left: 149px;
     font-weight: 400;
 }
 
@@ -301,8 +305,13 @@ p.banner-info {
 }
 
 .advertising-primary-newarrivals {
+    margin-bottom: 30px;
+    padding-left: 190px;
+    padding-top: 13px;
+    box-sizing: border-box;
     width: 540px;
     height: 255px;
+    text-align: center;
     background-image: url("../img/new-arrivals.png");
     background-repeat: no-repeat;
     background-color: #ff7373;
@@ -319,13 +328,18 @@ p.banner-info {
 }
 
 .advertising-small h3 {
+    margin-top: 148px;
+    margin-bottom: 50px;
     font-weight: 400;
+    text-align: center;
 }
 
 .advertising-small {
     width: 255px;
-    height: 65px;
+    height: 255px;
+    text-align: center;
     background-image: url("../img/best-for-athletes.png");
+    background-position: 30% 180%;
     background-repeat: no-repeat;
     background-color: #2d2f2e;
 }
@@ -333,7 +347,9 @@ p.banner-info {
 .advertising-small-premium {
     width: 255px;
     height: 255px;
+    text-align: center;
     background-image: url("../img/feel-premium.png");
+    background-position: bottom;
     background-repeat: no-repeat;
     background-color: #cecece;
 }
@@ -342,19 +358,19 @@ p.banner-info {
     color: #ff7373;
 }
 
-.advertising-small .advertising-title--premium {
+.advertising-small-premium .advertising-title--premium {
     font-weight: 400;
     color: #6b7072;
 }
 
-.advertising-small .premium {
+.advertising-small-premium .premium {
     color: #ffffff;
 }
 
 .collection-button {
     position: absolute;
-    left: 0;
-    bottom: 10px;
+    left: 165px;
+    bottom: 50px;
     min-width: 211px;
     padding: 15px;
     color: #000000;
@@ -374,7 +390,7 @@ p.banner-info {
 
 .discover-button {
     min-width: 145px;
-    padding: 15px;
+    padding: 14px;
     color: #ffffff;
     background-color: #623232;
 }
@@ -637,6 +653,10 @@ p.banner-info {
 
 .address-item p:active {
   color: #ffc0cb;
+}
+
+.footer-navigation {
+    display: flex;
 }
 
 .footer-navigation a:hover {
