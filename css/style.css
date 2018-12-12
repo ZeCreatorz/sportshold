@@ -124,7 +124,19 @@ body {
 }
 
 .link-current {
-    border-bottom: 4px solid #ff7373;
+    position: relative;
+}
+
+.link-current::after {
+  position: absolute;
+  content: "";
+  top: 52px;
+  left: -7px;
+
+  width: 65px;
+  height: 4px;
+
+  background-color: #ff7373;
 }
 
 .user-navigation {
@@ -227,7 +239,9 @@ img {
 }
 
 .banner b {
+    margin: 0;
     margin-bottom: 23px;
+    line-height: 60px;
     font-size: 50px;
     font-weight: 800;
     color: #ff7373;
@@ -239,7 +253,9 @@ p.banner-price {
 }
 
 p.banner-info {
+    margin: 0;
     margin-bottom: 37px;
+    line-height: 26px;
 }
 
 .banner-text--wrapper {
