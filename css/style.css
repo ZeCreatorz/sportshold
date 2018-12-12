@@ -107,20 +107,24 @@ body {
   color: #ffc0cb;
 }
 
-.user-navigation a:hover {
+.user-navigation a[href]:hover {
     background-color: #ff7373;
 }
 
-.user-navigation a:active {
+.user-navigation a[href]:active {
     color: #ffc0cb;
 }
 
-.store-navigation a:hover {
+.store-navigation a[href]:hover {
     color: #ff7373;
 }
 
-.store-navigation a:active {
+.store-navigation a[href]:active {
     color: #ffc0cb
+}
+
+.link-current {
+    border-bottom: 4px solid #ff7373;
 }
 
 .user-navigation {
@@ -147,6 +151,10 @@ body {
 
 .user-navigation .register-link {
     padding: 20px;
+}
+
+.register-link {
+    background-color: #ff7373;
 }
 
 .user-navigation .login-link {
@@ -211,6 +219,7 @@ img {
 
 .banner h3 {
     margin: 0;
+    line-height: 84px;
     margin-bottom: 25px;
     font-size: 70px;
     font-weight: 800;
