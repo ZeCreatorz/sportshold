@@ -577,9 +577,14 @@ p.banner-info {
 .news-title {
     font-size: 30px;
     font-weight: 700;
-    align-items: center;
+    text-align: center;
     text-transform: uppercase;
     color: #623232;
+}
+
+.news-item img {
+    margin-bottom: -150px;
+    margin-left: -30px;
 }
 
 .news-item b {
@@ -642,7 +647,7 @@ p.banner-info {
 
 .delivery-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
