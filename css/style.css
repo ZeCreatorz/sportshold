@@ -471,10 +471,13 @@ p.banner-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0;
     align-items: center;
     margin-bottom: 110px;
     list-style: none;
+}
+
+.catalog-item:not(:nth-of-type(4)) {
+    margin-right: 30px;
 }
 
 .current-price {
@@ -498,6 +501,7 @@ p.banner-info {
 
 .catalog-item {
     position: relative;
+    width: 200px;
     outline: 1px solid black;
     padding: 10px;
 }
@@ -520,6 +524,7 @@ p.banner-info {
 }
 
 .catalog-item b {
+    margin-bottom: 12px;
     font-weight: 700;
     text-transform: uppercase;
 }
