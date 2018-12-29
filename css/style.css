@@ -471,12 +471,14 @@ p.banner-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    vertical-align: bottom;
+    min-height: 350px;
     margin-bottom: 110px;
+
     list-style: none;
 }
 
-.catalog-item:not(:nth-of-type(4)) {
+.catalog-item:not(:nth-of-type(4n)) {
     margin-right: 30px;
 }
 
@@ -504,6 +506,7 @@ p.banner-info {
     width: 200px;
     outline: 1px solid black;
     padding: 10px;
+    margin-bottom: 31px;
 }
 
 .catalog-item img {
