@@ -508,6 +508,8 @@ p.banner-info {
 }
 
 .catalog-item {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 200px;
     outline: 1px solid #e0dfde;
@@ -515,6 +517,9 @@ p.banner-info {
     margin-bottom: 31px;
 }
 
+.catalog-text-wrapper {
+    margin-top: auto;
+}
 
 .catalog-item img {
     display: block;
@@ -579,6 +584,7 @@ p.banner-info {
 }
 
 .reviews {
+    padding: 100px;
     background-color: #472424;
     background-image: url("../img/reviewsbg.jpg");
     background-repeat: no-repeat;
