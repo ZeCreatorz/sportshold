@@ -473,7 +473,7 @@ p.banner-info {
     flex-wrap: wrap;
     vertical-align: bottom;
     min-height: 350px;
-    margin-bottom: 110px;
+    margin-bottom: 104px;
 
     list-style: none;
 }
@@ -485,6 +485,7 @@ p.banner-info {
 .current-price {
     position: absolute;
     margin: 0;
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 26px;
     color: #8a8784;
@@ -493,6 +494,10 @@ p.banner-info {
 .old-price {
     display: inline-block;
     margin-top: 30px;
+}
+
+.old-price-adidaspure {
+
 }
 
 .price-wrapper {
@@ -505,10 +510,11 @@ p.banner-info {
 .catalog-item {
     position: relative;
     width: 200px;
-    outline: 1px solid black;
+    outline: 1px solid #e0dfde;
     padding: 10px;
     margin-bottom: 31px;
 }
+
 
 .catalog-item img {
     display: block;
@@ -528,16 +534,22 @@ p.banner-info {
 }
 
 .catalog-item b {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.category-men {
+.category-gender {
     display: block;
 }
 
+.catalog-product-name {
+    margin: 0;
+    margin-bottom: 13px;
+}
+
 .item-number {
+    margin: 0;
     font-size: 13px;
     cololr: #bdb9b5;
 }
@@ -546,6 +558,7 @@ p.banner-info {
     display: flex;
     justify-content: space-between;
     margin: 0;
+    margin-bottom: 103px;
     padding: 0;
     list-style: none;
 }
@@ -567,6 +580,11 @@ p.banner-info {
 
 .reviews {
     background-color: #472424;
+    background-image: url("../img/reviewsbg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .review-list {
@@ -577,6 +595,7 @@ p.banner-info {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 
 .news-list {
     display: flex;
