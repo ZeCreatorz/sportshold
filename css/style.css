@@ -99,11 +99,11 @@ body {
     
 }
 
-.site-navigation a:hover {
+.site-navigation a[href]:hover {
     color: #ff7373;
 }
 
-.site-navigation a:active {
+.site-navigation a[href]:active {
   color: #ffc0cb;
 }
 
@@ -174,8 +174,27 @@ body {
 }
 
 .user-navigation .cart {
+    position: relative;
     padding: 20px;
+    padding-left: 35px;
 }
+
+.cart::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.cart:active::before {
+  opacity: 0.5;
+}
+
 
 .secondary-navigation {
     display: flex;
@@ -496,6 +515,11 @@ p.banner-info {
     margin-top: 30px;
 }
 
+.discount {
+    position: absolute;
+}
+
+
 .old-price-adidaspure {
 
 }
@@ -584,6 +608,7 @@ p.banner-info {
 }
 
 .reviews {
+    margin-bottom: 100px;
     padding: 100px;
     background-color: #472424;
     background-image: url("../img/reviewsbg.jpg");
@@ -603,12 +628,21 @@ p.banner-info {
 }
 
 
+.news {
+    margin-bottom: 100px;
+}
+
 .news-list {
     display: flex;
     list-style: none;
 }
 
+.news-item {
+    margin-right: 31px;
+
+}
 .news-title {
+    margin-bottom: 42px;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -636,6 +670,19 @@ p.banner-info {
     color: #ff7373;
 }
 
+.container-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+}
+
+.contacts-text-wrapper {
+    padding-top: 66px;
+    padding-bottom: 74px
+}
+
+
 .contacts-help {
     min-width: 211px;
     padding: 15px;
@@ -657,15 +704,24 @@ p.banner-info {
 
 
 .contacts { 
+    display: flex;
+    justify-content: space-between;
     background-color: #ff7373;
+    min-height: 200px;
 }
 
 
 .contacts p {
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.contacts .contacts-help-text {
+    margin-bottom: 13px;
 }
 
 .contacts p:last-of-type {
@@ -679,19 +735,126 @@ p.banner-info {
     background-color: #623232;
 }
 
+.container-deliverylist {
+    width: 1110px;
+}
+
 .delivery-list {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .delivery-item {
+    position: relative;
+    margin-top: 50px;
     color: #ffffff;
+    text-align: center;
+    padding: 63px 20px 13px 20px;
+    width: 120px;
 }
 
+
+.delivery-item-shipping::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 58px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/freshippingeu.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.delivery-moneyback::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 60px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/moneyback.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.delivery-247::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 60px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/247support.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.delivery-lowestprices::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 60px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/lowestprices.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.delivery-exclusive::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 50px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/exclusiveitems.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.delivery-5days::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 60px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/deliveryeu.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
 .address-list {
+
     list-style: none;
+}
+
+.footer-navigation-wrapper {
+    display: flex;
+    
 }
 
 .address-item b {
@@ -745,6 +908,11 @@ p.banner-info {
     text-transform: uppercase;
     color: #ff7373;
 }
+
+.column-wrapper {
+
+}
+
 
 .navigation-list {
     list-style: none;

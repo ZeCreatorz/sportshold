@@ -14,15 +14,15 @@
           justify-content: space-between;
         ">
         <ul class="site-navigation">
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Delivery</a></li>
-          <li><a href="#">Legal</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a class="support-link" href="#">Support</a></li>
+          <li><a class="delivery-link" href="#">Delivery</a></li>
+          <li><a class="legal-link" href="#">Legal</a></li>
+          <li><a class="aboutus-link" href="#">About us</a></li>
         </ul>
         <ul class="user-navigation">
           <li>
             <a class="cart" href="#">
-              <span class="cart-price">465.00</span>
+              <span class="cart-price">$465.00</span>
               <span class="cart-quantity">4 items</span>
             </a>
           </li>
@@ -97,6 +97,7 @@
       </div>
     </div>
     </section>
+  </div>
     <section class="sort">
       <h2 class="visually-hidden">sort list</h2>
         <ul class="sort-list">
@@ -119,6 +120,7 @@
           <div class="price-wrapper">
             <p class="current-price convblue-price">$45.00</p>
             <s class="old-price">$60.00</s>
+            <span class="discount">-25%</span>
           </div>
           <img src="img/convblue.jpg" width="200" height="81" alt="Men Converse Breakpoint">
           <b class="category-gender">men</b>
@@ -236,6 +238,7 @@
   </div>
     <section class="reviews">
       <h2 class="visually-hidden">Reviews</h2>
+      <div class="container">
       <ul class="avatar-list">
         <li class="avatar-item">
           <img src="img/avatar.png" width="64" height="65" alt="avatar">
@@ -276,10 +279,11 @@
           <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
         </li>
       </ul>
+    </div>
     </section>
-    <div class="container">
     <section class="news">
       <h2 class="news-title">latest news</h2>
+      <div class="container">
       <ul class="news-list">
         <li class="news-item">
           <img src="img/news1.jpg" width="350" height="350" alt="news">
@@ -300,27 +304,34 @@
           <p>24 Comments</p>
         </li>
       </ul>
-    </section>
     </div>
+    </section>
     <section class="contacts">
       <h2 class="visually-hidden">Contacts</h2>
-      <p>looking for help?</p>
-      <p>Have any questions or need help with order? Let us know!</p>
+      <div class="container container-contacts">
+      <div class="contacts-text-wrapper">
+      <p class="contacts-help-text">looking for help?</p>
+      <p class="contacts-questions">Have any questions or need help with order? Let us know!</p>
+      </div>
       <a class="button contacts-help" href="#">make an inquiry</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
     <section class="footer-delivery">
       <h2 class="visually-hidden">Delivery information</h2>
+      <div class="container container-deliverylist">
       <ul class="delivery-list">
-        <li class="delivery-item">Free Shipping <br>in Europe</li>
-        <li class="delivery-item">Money Back <br>Guarantee</li>
-        <li class="delivery-item">24/7 Customer <br>Support</li>
-        <li class="delivery-item">Lowest Prices <br>Guaranteed</li>
-        <li class="delivery-item">Exclusive Items for <br>Sportshold</li>
-        <li class="delivery-item">5-Day Delivery <br>in Europe</li>
+        <li class="delivery-item delivery-item-shipping">Free Shipping <br>in Europe</li>
+        <li class="delivery-item delivery-moneyback">Money Back <br>Guarantee</li>
+        <li class="delivery-item delivery-247">24/7 Customer <br>Support</li>
+        <li class="delivery-item delivery-lowestprices">Lowest Prices <br>Guaranteed</li>
+        <li class="delivery-item delivery-exclusive">Exclusive Items for <br>Sportshold</li>
+        <li class="delivery-item delivery-5days">5-Day Delivery <br>in Europe</li>
       </ul>
+     </div>
     </section>
+    <div class="footer-navigation-wrapper">
       <address>
         <ul class="address-list">
           <li class="address-item">
@@ -338,6 +349,7 @@
         </ul>
       </address>
       <nav class="footer-navigation">
+        <div class="column-wrapper">
         <h2>navigation</h2>
         <ul class="navigation-list">
           <li><a href="#">Home</a></li>
@@ -346,6 +358,8 @@
           <li><a href="#">Reviews</a></li>
           <li><a href="#">Brands</a></li>
         </ul>
+        </div>
+        <div class="column-wrapper">
         <h2>categories</h2>
         <ul class="categories-list">
           <li><a href="#">Men</a></li>
@@ -354,6 +368,8 @@
           <li><a href="#">Baby</a></li>
           <li><a href="#">Accessories</a></li>
         </ul>
+        </div>
+        <div class="column-wrapper">
         <h2>sales</h2>
         <ul class="sales-list">
           <li><a href="#">New Arrivals</a></li>
@@ -361,6 +377,8 @@
           <li><a href="#">Top Picks</a></li>
           <li><a href="#">Outlet</a></li>
         </ul>
+        </div>
+        <div class="column-wrapper">
         <h2>support</h2>
         <ul class="support-list">
           <li><a href="#">Shipping & Delivery</a></li>
@@ -369,7 +387,9 @@
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+        </div>
       </nav>
+    </div>
       <img src="img/logosport.svg" width="182" height="24" alt="Sportshold store logo">
       <p class="copyright">2017 Sportshold. All rights reserved.</p>
       <div class="footer-social">
