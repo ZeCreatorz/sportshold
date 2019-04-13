@@ -848,13 +848,20 @@ p.banner-info {
 
 
 .address-list {
-
     list-style: none;
+}
+
+.address-left {
+    width: 350px;
+}
+
+.navigation-right {
+    margin-left: auto;
+    width: 760px;
 }
 
 .footer-navigation-wrapper {
     display: flex;
-    
 }
 
 .address-item b {
@@ -889,6 +896,7 @@ p.banner-info {
 
 .footer-navigation {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-navigation a:hover {
