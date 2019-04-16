@@ -846,22 +846,17 @@ p.banner-info {
     background-position: 0 0;
 }
 
+address {
+    width: 285px;
+}
 
 .address-list {
     list-style: none;
 }
 
-.address-left {
-    width: 350px;
-}
-
-.navigation-right {
-    margin-left: auto;
-    width: 760px;
-}
-
 .footer-navigation-wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 .address-item b {
@@ -897,6 +892,7 @@ p.banner-info {
 .footer-navigation {
     display: flex;
     justify-content: space-between;
+    width: 760px;
 }
 
 .footer-navigation a:hover {
@@ -918,7 +914,6 @@ p.banner-info {
 }
 
 .column-wrapper {
-
 }
 
 
