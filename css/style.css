@@ -870,11 +870,19 @@ address {
     justify-content: space-between;
     margin-bottom: 160px;
 }
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    width: 370px;
+
+}
 .footer-social {
     display: flex;
     justify-content: flex-end;
     width: 370px;
 }
+
 
 
 .address-item b {
