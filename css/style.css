@@ -161,10 +161,6 @@ body {
     display: block;
 }
 
-.user-navigation li {
-
-}
-
 .user-navigation .register-link {
     padding: 20px;
 }
@@ -529,11 +525,6 @@ p.banner-info {
     position: absolute;
 }
 
-
-.old-price-adidaspure {
-
-}
-
 .price-wrapper {
   position: absolute;
   outline: 1px solid red;
@@ -875,15 +866,7 @@ address {
     display: flex;
     justify-content: flex-end;
     width: 370px;
-
 }
-.footer-social {
-    display: flex;
-    justify-content: flex-end;
-    width: 370px;
-}
-
-
 
 .address-item b {
     display: block;
@@ -947,10 +930,6 @@ address {
     justify-content: space-between;
     align-items: center;
 }
-
-.column-wrapper {
-}
-
 
 .navigation-list {
     margin: 0;
